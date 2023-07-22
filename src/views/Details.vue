@@ -107,11 +107,11 @@ export default {
           if (res.flag == true) {
             alert(res.message);
           } else {
-            alert(res.message);
+            alert("收藏成功");
           }
         })
         .catch((err) => {
-          alert("收藏成功");
+          alert(err);
         });
     },
     changeInfo(item) {
