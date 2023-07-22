@@ -1,6 +1,6 @@
 import { request } from '../utils/request'
 
-// 添加商品到购物车
+// 添加商品到收藏夹
 export function addOrderToCollect(params) {
     return request({
         method: 'post',
@@ -11,7 +11,7 @@ export function addOrderToCollect(params) {
     })
 }
 
-// 购物车删除商品
+// 收藏夹删除商品
 export function CollectDeleteOrder(params) {
     return request({
         method: 'delete',
@@ -22,7 +22,7 @@ export function CollectDeleteOrder(params) {
     })
 }
 
-// 展示购物车列表
+// 展示收藏夹列表
 export function CollectShow(params) {
     return request({
         method: 'get',
